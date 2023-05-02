@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import SpringAnimation
 
 class ViewController: UIViewController {
+    @IBOutlet var springView: SpringView!
+    
+    @IBOutlet var presetValue: UILabel!
+    @IBOutlet var curveValue: UILabel!
+    @IBOutlet var forceValue: UILabel!
+    @IBOutlet var durationValue: UILabel!
+    @IBOutlet var delayValue: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        springView.layer.cornerRadius = 10
     }
 
-
+    @IBAction func runAnimaton(_ sender: SpringButton) {
+    }
+    
 }
 
